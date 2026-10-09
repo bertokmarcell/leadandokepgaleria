@@ -31,10 +31,10 @@ state:
   -props által komunikálnak,öröklődnek
 
 "ölelés"+ main.tsx
-  -<StrictMode>
-    <KepProvider>
-      <App />
-    </KepProvider>
-  </StrictMode>,
+  -StrictMode>
+    KepProvider
+      App 
+    KepProvider
+  StrictMode,
   -a main.tsx-ben a kep provider közé tesszül az app-ot
   
