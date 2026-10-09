@@ -6,7 +6,7 @@ import NagyKep from './Components/NagyKep'
 import { UseKepContext} from './Contexts/KepContext'
 import Nagykep from './Components/NagyKep'
 function App() {
-  const [KEPLISTA,aktindex] = UseKepContext()
+  const [KEPLISTA,aktIndex] = UseKepContext()
 
   return (
     <>
@@ -16,8 +16,8 @@ function App() {
         </h1>
       </header>
       <main>
-        <Nagykep kepem={KEPLISTA[aktindex]}/>
-        <Galeria lista={KEPLISTA} aktindex={aktindex}/>
+        <Nagykep kepem={KEPLISTA[aktIndex]}/>
+        <Galeria lista={KEPLISTA} aktindex={aktIndex}/>
       </main>
     </>
   )
