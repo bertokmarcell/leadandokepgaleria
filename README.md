@@ -1,40 +1,40 @@
-NPM, React + Context
-NPM parancsok
-npm install – csomagok telepítése
-npm run dev – fejlesztői szerver indítása
-npm create vite@latest – új Vite-projekt létrehozása
-React
-A felületet komponensekre bontjuk, amelyeket a main.tsx indít el.
-Az App.tsx a fő komponens.
-Komponensek
-A return határozza meg, mi jelenjen meg a képernyőn.
-A komponensek Props segítségével adnak át adatokat egymásnak.
-Context
-createContext() – Context létrehozása.
-useContext() – hozzáférés a Contextben tárolt adatokhoz.
-A Provider biztosítja az adatokat a gyermekkomponenseknek.
-useState() – változó állapot tárolása.
-Az állapot változása újrarenderelést válthat ki.
-Provider
-A value tulajdonságban adatokat és függvényeket adunk át.
-State
-A komponens állapota.
-Lehet például számláló értéke vagy egy elem indexe.
-Az állapotot az állapotmódosító függvénnyel változtatjuk meg.
-Példa: setAktIndex(paraméter).
-Öröklődés
-Egy osztály átveszi egy másik osztály tulajdonságait és működését.
-Reactben a Props adatokat ad át a komponensek között, de ez nem klasszikus öröklődés.
-Ölelés + main.tsx
-A main.tsx a React alkalmazás belépési pontja.
-A KepProvider körbeveszi az App komponenst.
-Így az App és a gyermekkomponensei hozzáférhetnek a Context adataihoz.
+###npm react + context:
+#npm parancsok:
+#  -install,run dev,create vite@latest
 
-```tsx
-<StrictMode>
-<KepProvider>
-<App />
-</KepProvider>
-</StrictMode>
-```
+#react:
+#  -componentekre bontás amit a main.tsx indít el
+#  -app.tsx a fő componens
+
+#componensek:
+#  -return: mi jelenjen meg a képernyőn
+#  -props ként komunikálnak, adnak át adatokat egymásnak
+
+#context:
+#  -createcontext() létrehoz egy context-et
+#  -useContext() component hozzá tud férni egy contextben lévő adathoz
+#  -provider biztosítja a gyermekcomponenseknek az adatokat
+#  -usestate() változó állapotot tárolunk
+#  -állapot megváltozik ha a componensek frissulnek
+
+#provider:
+#  -value tulajdonságban adunk át adatokat és fuggvényeket
+
+#state:
+#  -componens állapota
+#  -lehet számláló érték, elem index
+#  -állapot módosító fuggvénnyel változtatjuk meg (pl a kepgaleriaban)
+#  a setaktualisindex(paraméter)
+
+#öröklődés:
+#  -osztály átveszi egy másik tulajdonságát,működését
+#  -props által komunikálnak,öröklődnek
+
+#"ölelés"+ main.tsx
+#  -<StrictMode>
+#    <KepProvider>
+#      <App />
+#    </KepProvider>
+#  </StrictMode>,
+#  -a main.tsx-ben a kep provider közé tesszül az app-ot
   
